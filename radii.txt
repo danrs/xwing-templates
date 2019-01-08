@@ -1,0 +1,21 @@
+3 bank
+r_o = 192mm
+r_i = 172mm
+
+2 hard
+r_0 = 72.8mm
+r_i = 52.8mm
+
+1 hard
+r_o = 45.9m
+r_i = 45.9mm
+
+how to find:
+measure outer arc length (l) with a ziptie
+convert to radius with a bit of math:
+
+l = (angle/360) * (2*pi*r)
+
+l/((angle/360)*2*pi) = r
+
+use trial and error to perfect
