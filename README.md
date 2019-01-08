@@ -1,54 +1,55 @@
 # xwing-templates
 X-wing templates and tokens for laser cutting
 
-acrylic settings on the cutter
-==============================
-BLACK (probably wrong)
------
-cutting (with paper): 10mm/s 80% pow
-rastering: 300mm/s 30% pow, interval 0.1
-score: 230mm/s 25% pow
+## Cutting instructions
+1. Create vector file in inkscape
+2. Convert all objects to path and remove all groupings from vector file
+3. Save svg to a USB and transfer to cutter computer
+4. Open svg in lightburn
+5. Set cutting properties for each colour (see below for recommendations)
+6. Turn on cutter and click "transfer" to send file.
+6. Prepare cutter and material
 
-trans grey/bronze
-----------
-cutting (with paper): 12mm/s 80% pow
-rastering (engrave): 280mm/s 30% pow, interval 0.1
-score: 231mm/s 20% pow
 
-bamboo
-----------
-cutting: 12mm/s 80% pow
-rastering (engrave): 300mm/s 30% pow, interval 0.1
-score: 235mm/s 20% pow
+## Recommended cutter settings
+Always check the hackerspace whiteboard for tips!
+Remember that the cutter uses heat and so will cut deeper in some areas and with close lines
+Keep designs small and compact to minimise drift
 
-SIZES (for scaling after importing to the laser)
-=====
-The size in mm in inkscape is the real size. Scale it to this same
-size again after importing to rdworks.
+### Acrylic
+#### White
+raster: 280mm/s 30%pow interval 0.1
+cut:    12mm/s 80%pow
+score:  ???
 
-Set-up
-======
-Focus the laser first!
-Uncheck "laser through mode" unless you want to try lower power at corners
-Ignore the second laser boxes - we only have one
+#### Black (probably wrong)
+raster: 300mm/s 30%pow interval 0.1
+cut:    10mm/s 80%pow
+score:  230mm/s 25%pow
 
-Saving files
-============
-Save as dxf, untick robo master and lwpolyline (probably)
+#### Trans smoke (dubious)
+raster: 280mm/s 30%pow interval 0.1
+cut:    12mm/s 80%pow
+score:  230mm/s 25%pow
 
-Troubleshooting
-===============
+### Bamboo
+raster: 300mm/s 30%pow interval 0.1
+cut:    12mm/s 80%pow <- can probably go lighter
+score:  235mm/s 20%pow
+
+### Mango kmart chopping board
+raster: 230mm/s 50%pow interval 0.1 <- too harsh, try 40%? 
+cut:    good luck mate
+score:  ???
+
+## Cutter Preparation
+Turn on both on switches and ensure Estop isn't pressed
+Focus laser after placing material: balance bent metal piece off laser head and raise bed until it falls
+Move head with arrow buttons to start position and hit origin
+Test the bounding box before cutting
+
+
+## Troubleshooting
 Ensure the cutter is on and the emergency stop isn't triggered
-Use COM7 if you have to reconnect
-
-Don't use the bottom part for when you're engraving - that's for altering speed around corners etc.
-There's a setting to stop the cutter sw from joining nearby paths.
-You'll need it when you import intricate stuff.
-
-Don't forget to re-scale once you get it in the sw.
-Last time I used the long range ruler as the tallest thing in the image,
-so I could scale the image height to 300.1mm (after locking height to width).
-This was maybe a shade too short with kerf considered. 300.5mm?
-
-Use the offset tool (top bar, 2/3 towards the right) to deal with kerf.
-0.1-0.05mm is probably enough offset, and use auto in/out.
+If file won't transfer, try restarting laser and disconnecting/reconnecting USB cable
+Use COM7 if you have to reconnect(?)
