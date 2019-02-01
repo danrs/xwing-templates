@@ -17,9 +17,19 @@ Remember that the cutter uses heat and so will cut deeper in some areas and with
 Keep designs small and compact to minimise drift
 
 ### Acrylic
+#### Trans red
+raster: 200mm/s 30%pow interval 0.1 crosshatched
+cut:    6mm/s 95%pow
+score:  ???
+
+#### Trans blue
+raster: 200mm/s 30%pow interval 0.1 crosshatched
+cut:    7mm/s 95%pow
+score:  ???
+
 #### White
 raster: 280mm/s 30%pow interval 0.1
-cut:    12mm/s 80%pow
+cut:    8mm/s 95%pow //12mm/s 80%pow
 score:  ???
 
 #### Black (probably wrong)
@@ -41,6 +51,7 @@ score:  235mm/s 20%pow
 raster: 230mm/s 50%pow interval 0.1 <- too harsh, try 40%? 
 cut:    good luck mate
 score:  ???
+
 
 ## Cutter Preparation
 Turn on both on switches and ensure Estop isn't pressed
