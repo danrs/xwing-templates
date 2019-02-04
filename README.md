@@ -13,6 +13,7 @@ X-wing templates and tokens for laser cutting
 
 ## Recommended cutter settings
 Always check the hackerspace whiteboard for tips!
+The laser seems to have weakened over time
 Remember that the cutter uses heat and so will cut deeper in some areas and with close lines
 Keep designs small and compact to minimise drift
 
@@ -20,7 +21,7 @@ Keep designs small and compact to minimise drift
 #### Trans red
 raster: 200mm/s 30%pow interval 0.1 crosshatched
 cut:    6mm/s 95%pow
-score:  ???
+score:  200mm/s20%pow???
 
 #### Trans blue
 raster: 200mm/s 30%pow interval 0.1 crosshatched
