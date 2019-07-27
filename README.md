@@ -16,43 +16,26 @@ Always check the hackerspace whiteboard for tips!
 The laser seems to have weakened over time
 Remember that the cutter uses heat and so will cut deeper in some areas and with close lines
 Keep designs small and compact to minimise drift
+Cut/score slower than 50mm/s if you have sharp corners or the laser will overshoot
+Don't exceed 90% power (32mA)
+
+TODO outline the "big card" on the 1 straight template - or change colour so it can be cut AND rastered
+
+## Inkscape weirdness
+Inkscape considers line thickness when you define a shape
+Obviously this makes no sense w.r.t a laser cutter, so either use REAL THIN lines or
+use single lines to construct shapes
+
+## SVG File Colours
+Red: Cut
+Black: Raster
+Green: Engrave (score)
 
 ### Acrylic
 #### Trans red
 raster: 200mm/s 30%pow interval 0.1 crosshatched
 cut:    6mm/s 95%pow
 score:  200mm/s20%pow???
-
-#### Trans blue
-raster: 200mm/s 30%pow interval 0.1 crosshatched
-cut:    7mm/s 95%pow
-score:  ???
-
-#### White
-raster: 280mm/s 30%pow interval 0.1
-cut:    8mm/s 95%pow //12mm/s 80%pow
-score:  ???
-
-#### Black (probably wrong)
-raster: 300mm/s 30%pow interval 0.1
-cut:    10mm/s 80%pow
-score:  230mm/s 25%pow
-
-#### Trans smoke (dubious)
-raster: 280mm/s 30%pow interval 0.1
-cut:    12mm/s 80%pow
-score:  230mm/s 25%pow
-
-### Bamboo
-raster: 300mm/s 30%pow interval 0.1
-cut:    12mm/s 80%pow <- can probably go lighter
-score:  235mm/s 20%pow
-
-### Mango kmart chopping board
-raster: 230mm/s 50%pow interval 0.1 <- too harsh, try 40%? 
-cut:    good luck mate
-score:  ???
-
 
 ## Cutter Preparation
 Turn on both on switches and ensure Estop isn't pressed
