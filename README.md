@@ -1,5 +1,7 @@
 # xwing-templates
-X-wing templates and tokens for laser cutting
+Laser cut files for the X-Wing Miniatures game, created by Fantasy Flight Games and Atomic Mass Games.
+
+The X-Wing Miniatures game is Copyright Atomic Mass Games. The content of this repository is unofficial fan-made content and is not affiliated with, or endorsed by, Atomic Mass Games.
 
 ## General Cutting instructions
 1. Create vector file in inkscape
